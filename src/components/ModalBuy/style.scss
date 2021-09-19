@@ -1,0 +1,47 @@
+.modal-buy-overlay {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(#000, 0.67);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-buy-content {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 400px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: var(--WHITE);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  animation: up 250ms ease-out;
+}
+
+.modal-buy-btn {
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
