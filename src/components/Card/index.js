@@ -12,7 +12,7 @@ const Card = ({ data, addCart }) => {
     api
       .get(`pokemon/${url.substring(34)}`, {
         headers: {
-          "Access-Control-Allow-Origin": "https://pokestore-b2wd.netlify.app/",
+          "Access-Control-Allow-Origin": "https://pokestore-rho.vercel.app/",
         },
       })
       .then((response) => {
