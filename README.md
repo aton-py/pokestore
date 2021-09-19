@@ -10,7 +10,9 @@
 </h4>
 
 <h2 align="center">
-  <img src="" />
+  <img src="https://github.com/aton-py/pokestore/blob/master/snapshot_fire.png" />
+  <br>
+  <img src="https://github.com/aton-py/pokestore/blob/master/snapshot_water.png" />
   <br>
 </h2>
 
