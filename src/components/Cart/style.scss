@@ -1,0 +1,136 @@
+.cart-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#000, 0.67);
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-container {
+  height: 100%;
+  width: 30%;
+  min-width: 300px;
+  background-color: var(--WHITE);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  animation: leftCart 250ms ease-out;
+
+  h4 {
+    margin: 20px 0;
+  }
+}
+
+.cart-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: center;
+  border-bottom: var(--RED) 1px solid;
+
+  span {
+    color: var(--BLACK);
+  }
+}
+
+.cart-item {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 150px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: rgba(#000, 0.3) 1px solid;
+  img {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+  }
+
+  &-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--BLACK);
+      text-transform: capitalize;
+    }
+
+    div {
+      margin-bottom: 10px;
+      span {
+        font-weight: 500;
+        font-size: 10px;
+        text-transform: capitalize;
+        color: rgba(#000, 0.6);
+        background-color: var(--WHITE);
+        padding: 2px 4px;
+        border-radius: 5px;
+        margin: 0 5px 5px 0;
+      }
+    }
+
+    span {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--BLACK);
+      text-transform: capitalize;
+    }
+  }
+
+  &-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    span {
+      font-weight: 500;
+      color: rgba(var(--BLACK), 0.6);
+    }
+  }
+
+  .cart-item-btns {
+    display: flex;
+
+    button {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--RED);
+      border: none;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      filter: brightness(1.2);
+    }
+  }
+}
+
+@keyframes leftCart {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+  }
+}
