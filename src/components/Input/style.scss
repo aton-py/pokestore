@@ -1,0 +1,22 @@
+.input-icon-container {
+  height: 40px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+
+  background-color: var(--WHITE);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  input {
+    margin-left: 12px;
+    color: var(--GRAY);
+    outline: none;
+    border: none;
+
+    &::placeholder {
+      color: var(--GRAY);
+    }
+  }
+}
