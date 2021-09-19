@@ -1,0 +1,85 @@
+.card {
+  position: relative;
+  min-height: 445px;
+  padding-top: 20%;
+  background-color: var(--GRAY-2);
+  border-radius: 5px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &-image {
+    width: 80%;
+  }
+
+  &-info {
+    width: 100%;
+    height: 145px;
+    padding: 20px;
+    background-color: var(--RED);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    h2 {
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      font-size: 24px;
+      text-transform: capitalize;
+      color: var(--WHITE);
+    }
+
+    .types {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 10px;
+      text-transform: capitalize;
+      color: var(--RED);
+      background-color: var(--WHITE);
+      padding: 2px 4px;
+      border-radius: 5px;
+      margin: 0 5px 5px 0;
+    }
+
+    h3 {
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--WHITE);
+      margin-top: 10px;
+    }
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(#000, 0.67);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    .card-overlay {
+      opacity: 1;
+    }
+  }
+}
